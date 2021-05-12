@@ -4,6 +4,7 @@ body {
     margin: 0;
     height: 100%;
     min-height: 100%;
+    overflow-x: hidden;
 
     font-family: Arial, sans-serif;
     font-size: 15px;
@@ -16,179 +17,255 @@ body {
 * {
     box-sizing: border-box;
 }
-
-.card {
-    position: relative;
-    min-width: 295px;
-    max-width: 590px;
-    width: 100%;
-    background: chocolate;
-}
-
-.card > img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.card.bg {
-    height: 500px;
-
-    background-image: url("card.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.params {
-    position: absolute;
-    left: 0;
-    bottom: 7%;
-
-    width: 100%;
-    height: 8%;
-
-    display: flex;
-    justify-content: center;
-    gap: 2%;
-}
-
-.param {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 16%;
-    height: 100%;
-
-    border-radius: 5px;
-
-    color: white;
-    font-size: 400%;
-    font-weight: bold;
-}
-
-.card > .spells {
-    position: absolute;
-    background: darkgoldenrod;
-    padding: 15px;
-    border: 5px solid #fff;
-    border-radius: 5px;
-
-    left: 14%;
-    bottom: 9%;
-
-    width: 74%;
-    height: 33%;
-}
-
-.spell {
+.desk{
     display: grid;
-    grid-template-columns: max-content 1fr max-content;
-
-    font-size: 150%;
+    grid-template-columns: 24% 52% 24%;
+    background: darkgoldenrod;
+    height: 100%;
 }
 
-.spell__letter,
-.spell__name,
-.spell__guild-img {
-    align-self: end;
+.sidebar {
+    padding: 20px 0;
 }
 
-.spell__guild-img {
+.left-side {
+    position: relative;
+    justify-self: center;
+}
+
+.live__name-mg__death{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+    padding-top: 1%;
+}
+
+.live__hero{
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-.spell > div .value {
-    font-weight: bold;
-    font-size: 180%;
+.live__hero > img{
+    width: 35%;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 2px;
+
 }
 
-.spell__letter {
-    color: red;
-    font-size: 250%;
-    font-weight: bold;
-    line-height: 48px;
-
-    margin-right: 10px;
-}
-
-.spell-params {
-    grid-row: 2;
-    grid-column: 1/3;
-
-    display: flex;
-    gap: 20px;
-}
-
-.spell__description {
-    grid-row: 3;
-    grid-column: 1/4;
-}
-
-/* .spell-params > div:not(:first-child) {
-    margin-left: 20px;
-} */
-
-.detachment {
-    transform: rotate(270deg);
-    position: absolute;
+.name__mg{
+    align-self: start;
+    border: 5px solid black;
+    border-radius: 2px;
     background: chocolate;
-    left: -9%;
-    top: 39%;
-    font-size: 170%;
-    border-radius: 5px;
+    color: white;
+    font-size: 270%;
     font-weight: bold;
-}
-
-.name-soldier {
-    transform: rotate(270deg);
-    position: absolute;
-    background: chocolate;
-    left: 74%;
-    top: 43%;
-    font-size: 180%;
-    border-radius: 5px;
     white-space: nowrap;
 }
 
-.param.hc {
+.death__hero{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.death__hero > img{
+    width: 35%;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 2px;
+}
+.№live__name-player1__№death{
+    display: grid;
+    grid-template-columns: 1fr 44% 1fr;
+    gap: 2%;
+    padding-top: 0.5%;
+}
+
+.№live1{
+    justify-self:end;
+    background: white;
+    font-size: 200%;
+    border: 4px solid black;
+    border-radius: 2px;
+}
+
+.name__player1{
+    justify-self: end;
+    align-content: center;
+    border: 4px solid black;
+    border-radius: 2px;
     background: red;
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
-.param.shoot {
-    background: cornflowerblue;
+
+.№death1{
+    justify-self: start;
+    align-self: start;
+    background: black;
+    color: white;
+    font-size: 200%;
+    border: 4px solid white;
+    border-radius: 2px;
 }
-.param.magic-defense {
-    background: gold;
+.№live__name-player2__№death{
+    display: grid;
+    grid-template-columns: 1fr 44% 1fr;
+    gap: 2%;
+    padding-top: 0.5%;
 }
-.param.hp {
+
+.№live2{
+    justify-self:end;
+    background: white;
+    font-size: 200%;
+    border: 4px solid black;
+    border-radius: 2px;
+}
+
+.name__player2{
+    justify-self: center;
+    border: 4px solid black;
+    border-radius: 2px;
     background: limegreen;
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-/*
-.param:nth-child(2) {
-    background: yellow;
+.№death2{
+    justify-self: start;
+    background: black;
+    color: white;
+    font-size: 200%;
+    border: 4px solid white;
+    border-radius: 2px;
+}
+.№live__name-player3__№death{
+    display: grid;
+    grid-template-columns: 1fr 44% 1fr;
+    gap: 2%;
+    padding-top: 0.5%;
 }
 
-.param:nth-child(odd) {
-    background: red;
+.№live3{
+    justify-self:end;
+    background: white;
+    font-size: 200%;
+    border: 4px solid black;
+    border-radius: 2px;
 }
 
-.param:nth-child(even) {
-    background: chartreuse;
-} 
-*/
+.name__player3{
+    justify-self: center;
+    border: 4px solid black;
+    border-radius: 2px;
+    background: dodgerblue;
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.№death3{
+    justify-self: start;
+    background: black;
+    color: white;
+    font-size: 200%;
+    border: 4px solid white;
+    border-radius: 2px;
+}
+.№live__name-player4__№death{
+    display: grid;
+    grid-template-columns: 1fr 44% 1fr;
+    gap: 2%;
+    padding-top: 0.5%;
+}
+
+.№live4{
+    justify-self:end;
+    background: white;
+    font-size: 200%;
+    border: 4px solid black;
+    border-radius: 2px;
+}
+
+.name__player4{
+    border: 4px solid black;
+    border-radius: 2px;
+    background: orange;
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.№death4{
+    justify-self: start;
+    background: black;
+    color: white;
+    font-size: 200%;
+    border: 4px solid white;
+    border-radius: 2px;
+}
+
+.log{
+    position: absolute;
+    background: black;
+    width: 86%;
+    height: 48%;
+    top: 19%;
+    left: 7%;
+    border: 4px solid white;
+    border-radius: 2px;
+}
+.art-icon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0.5%;
+    padding-top: 107%;
+    margin: 1%;
+
+}
+.art__icon1 > img{
+    width: 100%;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 2px;
+}
 
 .board-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    min-width: 800px;
+    /*min-width: 800px;*/
+    left: 0%;
+    bottom: 50%;
+    grid-auto-rows: minmax(min-content, max-content);
 }
 
 .cell {
     position: relative;
-
     max-width: 294px;
     max-height: 294px;
     background-color: aqua;
@@ -215,19 +292,79 @@ body {
     font-size: 2rem;
     font-weight: bold;
 }
-
-@media screen and (max-width: 800px) {
-    .card {
-        font-size: 15px;
-    }
-
-    .param {
-        font-size: 300%;
-    }
+.right-side{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 50% 40%;
+    gap: 1%;
 }
 
-@media screen and (max-width: 600px) {
-    .card {
-        font-size: 13px;
-    }
+.card {
+    padding-top: 1%;
+    padding-left: 3%;
 }
+.card > img{
+    width: 100%;
+    height: auto;
+}
+.baf{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 5%;
+    padding-left: 9%;
+
+}
+.baf >img{
+    border: 5px solid white;
+    border-radius: 2px;
+    width: 80%;
+    height: auto;
+}
+
+.artifacts{
+    padding-top: 1%;
+    padding-left: 3%;
+}
+.artifacts > img{
+    width: 100%;
+    height: auto;
+}
+.icon-art_end{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    justify-self: center;
+}
+.icon-art_end >img{
+    margin-left: 38%;
+    width: 21%;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 2px;
+    margin-top: 1%;
+}
+.end{
+    align-self: center;
+    background: yellow;
+    color: black;
+    font-weight: bold;
+    font-size: 500%;
+    border: 4px solid white;
+    border-radius: 2px;
+    transform: rotate(270deg);
+
+}
+.open-art{
+    align-self: center;
+    justify-self: center;
+    background: cornflowerblue;
+    color: black;
+    font-weight: bold;
+    font-size: 280%;
+    border: 4px solid white;
+    border-radius: 2px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
