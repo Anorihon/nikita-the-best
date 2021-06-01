@@ -528,3 +528,83 @@ grid-template-rows: 50% 40%;
     margin-top: 4%;
 }
 
+/* Большой лог */
+.big-log {
+    margin: 50px 0;
+
+    min-height: 100px;
+    height: auto;
+}
+
+.big-log > .item {
+    border-bottom: 1px solid #ffffff;
+}
+
+.big-log > .item:first-child {
+    border-top: 1px solid #ffffff;
+}
+
+.log-item__action-title {
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.log-item__persons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.log-item__persons .vs{
+    color: red;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.log-item__persons .avatar {
+    display: block;
+    width: 30%;
+    height: auto;
+}
+
+.big-log__action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    padding-right: 15px;
+}
+
+.big-log__action .avatar {
+    display: block;
+    width: 30%;
+    height: auto;
+}
+
+.big-log__action .hero-param {
+    padding: 5px 10px;
+    background: red;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.big-log__action .result,
+.big-log__action .operator,
+.big-log__action .equal {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.big-log__action .cube-result > img {
+    width: 40px;
+    height: auto;
+}
+
+.big-log__result {
+    justify-content: flex-start;
+}
