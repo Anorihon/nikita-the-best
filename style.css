@@ -4,7 +4,7 @@ body {
     margin: 0;
     height: 100%;
     min-height: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 
     font-family: Arial, sans-serif;
     font-size: 15px;
@@ -25,19 +25,28 @@ body {
 }
 
 .sidebar {
-    padding: 20px 0;
+    padding: 3% 0;
 }
 
 .left-side {
-    position: relative;
     justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content 55% max-content;
+    grid-auto-rows: minmax(min-content, max-content);
+}
+.№lnpd№{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 1%;
 }
 
 .live__name-mg__death{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2%;
-    padding-top: 1%;
+
 }
 
 .live__hero{
@@ -134,7 +143,7 @@ body {
     justify-self: center;
     border: 4px solid black;
     border-radius: 2px;
-    background: limegreen;
+    background: cornflowerblue;
     color: white;
     font-size: 200%;
     font-weight: bold;
@@ -153,103 +162,93 @@ body {
     border: 4px solid white;
     border-radius: 2px;
 }
-.№live__name-player3__№death{
-    display: grid;
-    grid-template-columns: 1fr 44% 1fr;
-    gap: 2%;
-    padding-top: 0.5%;
-}
-
-.№live3{
-    justify-self:end;
-    background: white;
-    font-size: 200%;
-    border: 4px solid black;
-    border-radius: 2px;
-}
-
-.name__player3{
-    justify-self: center;
-    border: 4px solid black;
-    border-radius: 2px;
-    background: dodgerblue;
-    color: white;
-    font-size: 200%;
-    font-weight: bold;
-    white-space: nowrap;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.№death3{
-    justify-self: start;
-    background: black;
-    color: white;
-    font-size: 200%;
-    border: 4px solid white;
-    border-radius: 2px;
-}
-.№live__name-player4__№death{
-    display: grid;
-    grid-template-columns: 1fr 44% 1fr;
-    gap: 2%;
-    padding-top: 0.5%;
-}
-
-.№live4{
-    justify-self:end;
-    background: white;
-    font-size: 200%;
-    border: 4px solid black;
-    border-radius: 2px;
-}
-
-.name__player4{
-    border: 4px solid black;
-    border-radius: 2px;
-    background: orange;
-    color: white;
-    font-size: 200%;
-    font-weight: bold;
-    white-space: nowrap;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.№death4{
-    justify-self: start;
-    background: black;
-    color: white;
-    font-size: 200%;
-    border: 4px solid white;
-    border-radius: 2px;
-}
 
 .log{
-    position: absolute;
+    justify-self: center;
     background: black;
     width: 86%;
-    height: 48%;
-    top: 19%;
-    left: 7%;
+    height: 700px;
     border: 4px solid white;
     border-radius: 2px;
+    overflow-x: hidden ;
+    overflow-y: auto;
+    margin-top: 4%;
 }
+
+.log-item{
+    height: 100px;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 1fr;
+}
+
+.log-item:not(:first-child){
+    margin-top: 30px;
+    display: grid;
+}
+
+.log-left{
+    background: limegreen;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 1fr;
+    gap: 1%;
+    margin: 1%;
+}
+
+.icon-card > img{
+    width: 100%;
+    height: auto;
+}
+
+.ha-sp-ha-art > img{
+    width: 100%;
+    height: auto;
+}
+
+.cube-result > img{
+    width: 100%;
+    height: auto;
+}
+.battle-result > img{
+    width: 100%;
+    height: auto;
+}
+
+.div1{
+    font-size: 250%;
+    font-weight: bold;
+    text-align: center;
+}
+.div2 > img{
+    width: 100%;
+    height: auto;
+}
+
+.log-right{
+    background: red;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 1fr;
+    gap: 1%;
+    margin: 1%;
+}
+.resist-art{
+
+}
+
 .art-icon{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0.5%;
-    padding-top: 107%;
-    margin: 1%;
+    gap: 0.3%;
+    padding-left: 1%;
+    padding-top: 3%;
+    margin: 2%;
 
 }
 .art__icon1 > img{
-    width: 100%;
+    width: 95%;
     height: auto;
     border: 5px solid white;
     border-radius: 2px;
@@ -258,8 +257,6 @@ body {
 .board-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    /*min-width: 800px;*/
-    left: 0%;
     bottom: 50%;
     grid-auto-rows: minmax(min-content, max-content);
 }
@@ -295,18 +292,159 @@ body {
 .right-side{
     display: grid;
     grid-template-columns: 80% 20%;
-    grid-template-rows: 50% 40%;
+grid-template-rows: 50% 40%;
     gap: 1%;
 }
 
 .card {
-    padding-top: 1%;
     padding-left: 3%;
+    position: relative;
 }
 .card > img{
     width: 100%;
     height: auto;
 }
+.card.bg {
+    height: 500px;
+    background-image: url("card.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.params {
+    position: absolute;
+    left: 1.7%;
+    bottom: 5.5%;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5%;
+}
+
+.param {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16%;
+    height: 100%;
+    border-radius: 5px;
+    color: white;
+    font-size: 300%;
+    font-weight: bold;
+}
+
+.card > .spells {
+    position: absolute;
+    background: darkgoldenrod;
+    padding: 15px;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    left: 16%;
+    bottom: 8%;
+    width: 72%;
+    height: 34%;
+}
+
+.spell {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    font-size: 150%;
+}
+
+.spell__letter,
+.spell__name,
+.spell__guild-img {
+    align-self: end;
+}
+
+.spell__guild-img {
+    display: flex;
+    justify-content: center;
+
+
+}
+.spell__guild-img >img{
+    display: flex;
+    width: 70%;
+    height: auto;
+    justify-content: flex-end;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.spell > div .value {
+    font-weight: bold;
+    font-size: 180%;
+}
+
+.spell__letter {
+    color: red;
+    font-size: 250%;
+    font-weight: bold;
+    line-height: 48px;
+    margin-right: 10px;
+}
+
+.spell-params {
+    grid-row: 2;
+    grid-column: 1/3;
+    display: flex;
+    gap: 20px;
+}
+
+.spell__description {
+    grid-row: 3;
+    grid-column: 1/4;
+}
+
+.spell-params > div:not(:first-child) {
+    margin-left: 20px;
+}
+
+.detachment {
+    transform: rotate(270deg);
+    position: absolute;
+    background: chocolate;
+    left: -5%;
+    top: 39%;
+    font-size: 130%;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.name-soldier {
+    transform: rotate(270deg);
+    position: absolute;
+    background: chocolate;
+    left: 74%;
+    top: 43%;
+    font-size: 154%;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.param.hc {
+    background: red;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.param.shoot {
+    background: cornflowerblue;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.param.magic-defense {
+    background: gold;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.param.hp {
+    background: limegreen;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
 .baf{
     display: grid;
     grid-template-columns: 100%;
@@ -323,13 +461,35 @@ body {
 }
 
 .artifacts{
+    position: relative;
     padding-top: 1%;
     padding-left: 3%;
 }
+.des-name-art{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    gap: 15%;
+    margin: 17%;
+}
+
+.name-artifacts{
+    font-size: 250%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description-art{
+    font-size: 210%;
+    text-align: center;
+}
+
 .artifacts > img{
     width: 100%;
     height: auto;
 }
+
 .icon-art_end{
     display: grid;
     grid-template-columns: 100%;
@@ -361,10 +521,10 @@ body {
     background: cornflowerblue;
     color: black;
     font-weight: bold;
-    font-size: 280%;
+    font-size: 250%;
     border: 4px solid white;
     border-radius: 2px;
     margin-left: 5%;
-    margin-top: 2%;
+    margin-top: 4%;
 }
 

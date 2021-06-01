@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="94d2a54b-bbf7-4aa1-8716-13bed4deabb2" name="Default Changelist" comment="">
+    <list default="true" id="94d2a54b-bbf7-4aa1-8716-13bed4deabb2" name="Default Changelist" comment="layout update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
@@ -30,6 +48,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -54,17 +73,60 @@
       <workItem from="1620766597537" duration="153000" />
       <workItem from="1620827496705" duration="2196000" />
       <workItem from="1620848598198" duration="283000" />
-      <workItem from="1620849161803" duration="2397000" />
+      <workItem from="1620849161803" duration="3941000" />
+      <workItem from="1621276776753" duration="3133000" />
+      <workItem from="1621349755743" duration="5927000" />
+      <workItem from="1621357109109" duration="1440000" />
+      <workItem from="1621365890336" duration="2378000" />
+      <workItem from="1621450254378" duration="1427000" />
+      <workItem from="1621537405647" duration="3417000" />
+      <workItem from="1621540983035" duration="1865000" />
+      <workItem from="1621876729721" duration="420000" />
+      <workItem from="1621955386587" duration="5097000" />
+      <workItem from="1622146755651" duration="683000" />
+      <workItem from="1622493794177" duration="341000" />
+      <workItem from="1622556422855" duration="1509000" />
+      <workItem from="1622558246777" duration="1396000" />
+      <workItem from="1622567417449" duration="139000" />
+      <workItem from="1622567594163" duration="1777000" />
     </task>
+    <task id="LOCAL-00001" summary="layout update">
+      <created>1620851815078</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620851815078</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="layout update" />
+    <option name="LAST_COMMIT_MESSAGE" value="layout update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1912" y="378" key="#Notifications" timestamp="1620657219220">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1912" y="378" key="#Notifications/0.0.2560.1400/-1920.0.1280.680@0.0.2560.1400" timestamp="1620657219220" />
+    <state x="916" y="248" key="SettingsEditor" timestamp="1620852235776">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="916" y="248" key="SettingsEditor/0.0.2560.1400/-1920.0.1280.680@0.0.2560.1400" timestamp="1620852235776" />
   </component>
 </project>
